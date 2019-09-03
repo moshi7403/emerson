@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190830 15:42:20.216" generator="Robot 3.1.2 (Python 2.7.16 on darwin)">
+<suite source="/Users/mohammadmoshiurrahman/PycharmProjects/Emerson/TestCases/TC_Emersonecologics.robot" id="s1" name="TC Emersonecologics">
+<test id="s1-t1" name="TC_Category_001">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20190830 15:42:20.365" level="INFO">Opening browser 'chrome' to base url 'https://www.emersonecologics.com'.</msg>
+<status status="PASS" endtime="20190830 15:42:26.339" starttime="20190830 15:42:20.364"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190830 15:42:26.502" starttime="20190830 15:42:26.339"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${ShopMenuXpath}</arg>
+</arguments>
+<status status="PASS" endtime="20190830 15:42:26.534" starttime="20190830 15:42:26.503"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ShopMenuXpath}</arg>
+</arguments>
+<msg timestamp="20190830 15:42:26.535" level="INFO">Clicking element 'xpath=//*[@id="shopMenuDropdownToggle"]/span/span[1]'.</msg>
+<status status="PASS" endtime="20190830 15:42:26.694" starttime="20190830 15:42:26.534"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${CategoryXpath}</arg>
+</arguments>
+<status status="PASS" endtime="20190830 15:42:26.728" starttime="20190830 15:42:26.695"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${CategoryXpath}</arg>
+</arguments>
+<msg timestamp="20190830 15:42:26.728" level="INFO">Clicking element 'xpath=//*[@id="mega-menu-shop-by"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20190830 15:42:26.835" starttime="20190830 15:42:26.728"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${NutritionalSuppliXpath}</arg>
+</arguments>
+<status status="PASS" endtime="20190830 15:42:26.862" starttime="20190830 15:42:26.835"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${NutritionalSuppliXpath}</arg>
+</arguments>
+<msg timestamp="20190830 15:42:26.862" level="INFO">Clicking element 'xpath=//*[@id="mega-menu-shop-by"]/li[2]/div/div/div[1]/ul/li/a'.</msg>
+<status status="PASS" endtime="20190830 15:42:26.931" starttime="20190830 15:42:26.862"></status>
+</kw>
+<status status="PASS" endtime="20190830 15:42:26.931" critical="yes" starttime="20190830 15:42:20.364"></status>
+</test>
+<test id="s1-t2" name="TC_Category_002">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${ResponseOnNutrinalSuppliXpath}</arg>
+</arguments>
+<status status="PASS" endtime="20190830 15:42:27.192" starttime="20190830 15:42:26.932"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${ResponseOnNutrinalSuppliXpath}</arg>
+</arguments>
+<assign>
+<var>${ActualResponse}</var>
+</assign>
+<msg timestamp="20190830 15:42:27.230" level="INFO">${ActualResponse} = “Nutritional Supplements” returned 0 results</msg>
+<status status="PASS" endtime="20190830 15:42:27.230" starttime="20190830 15:42:27.192"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${ActualResponse}</arg>
+<arg>${ExpectedResponse}</arg>
+</arguments>
+<status status="PASS" endtime="20190830 15:42:27.231" starttime="20190830 15:42:27.231"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190830 15:42:28.053" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-105.png"&gt;&lt;img src="selenium-screenshot-105.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190830 15:42:28.053" starttime="20190830 15:42:27.231"></status>
+</kw>
+<status status="PASS" endtime="20190830 15:42:28.053" critical="yes" starttime="20190830 15:42:26.932"></status>
+</test>
+<test id="s1-t3" name="TC_Category_003">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${CrossIconOnSerachBarXpath}</arg>
+</arguments>
+<status status="PASS" endtime="20190830 15:42:28.199" starttime="20190830 15:42:28.054"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${CrossIconOnSerachBarXpath}</arg>
+</arguments>
+<msg timestamp="20190830 15:42:28.200" level="INFO">Clicking element 'xpath=//*[@id="navbar-main"]/search-box/div/div/div/div/ee-autocomplete/div/form/button'.</msg>
+<status status="PASS" endtime="20190830 15:42:28.334" starttime="20190830 15:42:28.200"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190830 15:42:28.931" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-106.png"&gt;&lt;img src="selenium-screenshot-106.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190830 15:42:28.931" starttime="20190830 15:42:28.335"></status>
+</kw>
+<status status="PASS" endtime="20190830 15:42:28.931" critical="yes" starttime="20190830 15:42:28.054"></status>
+</test>
+<test id="s1-t4" name="TC_Category_004">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SearchBarXpath}</arg>
+</arguments>
+<status status="PASS" endtime="20190830 15:42:28.959" starttime="20190830 15:42:28.932"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SearchBarXpath}</arg>
+<arg>${NegativeInputTextForCategory}</arg>
+</arguments>
+<msg timestamp="20190830 15:42:28.960" level="INFO">Typing text 'jadwebdehjgff' into text field 'xpath=//*[@id="searchAutocomplete"]'.</msg>
+<status status="PASS" endtime="20190830 15:42:29.339" starttime="20190830 15:42:28.960"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SearchBarXpath}</arg>
+</arguments>
+<msg timestamp="20190830 15:42:29.340" level="INFO">Clicking element 'xpath=//*[@id="searchAutocomplete"]'.</msg>
+<status status="PASS" endtime="20190830 15:42:29.392" starttime="20190830 15:42:29.339"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190830 15:42:29.942" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-107.png"&gt;&lt;img src="selenium-screenshot-107.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190830 15:42:29.942" starttime="20190830 15:42:29.393"></status>
+</kw>
+<status status="PASS" endtime="20190830 15:42:29.942" critical="yes" starttime="20190830 15:42:28.932"></status>
+</test>
+<test id="s1-t5" name="TC_Category_005">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SearchBarXpath}</arg>
+</arguments>
+<status status="PASS" endtime="20190830 15:42:29.962" starttime="20190830 15:42:29.943"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${CrossIconOnSerachBarXpath}</arg>
+</arguments>
+<msg timestamp="20190830 15:42:29.962" level="INFO">Clicking element 'xpath=//*[@id="navbar-main"]/search-box/div/div/div/div/ee-autocomplete/div/form/button'.</msg>
+<status status="PASS" endtime="20190830 15:42:30.070" starttime="20190830 15:42:29.962"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SearchBarXpath}</arg>
+</arguments>
+<status status="PASS" endtime="20190830 15:42:30.090" starttime="20190830 15:42:30.070"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SearchBarXpath}</arg>
+<arg>${PositiveInputTextForCategory}</arg>
+</arguments>
+<msg timestamp="20190830 15:42:30.090" level="INFO">Typing text 'Ther-Biotic® Complete powder' into text field 'xpath=//*[@id="searchAutocomplete"]'.</msg>
+<status status="PASS" endtime="20190830 15:42:30.473" starttime="20190830 15:42:30.090"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SearchIconXpath}</arg>
+</arguments>
+<msg timestamp="20190830 15:42:30.473" level="INFO">Clicking element 'xpath=//*[@id="searchIconBtn"]'.</msg>
+<status status="PASS" endtime="20190830 15:42:30.590" starttime="20190830 15:42:30.473"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190830 15:42:31.125" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-108.png"&gt;&lt;img src="selenium-screenshot-108.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190830 15:42:31.125" starttime="20190830 15:42:30.591"></status>
+</kw>
+<status status="PASS" endtime="20190830 15:42:31.126" critical="yes" starttime="20190830 15:42:29.943"></status>
+</test>
+<test id="s1-t6" name="TC_Category_006">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${ProductXpath}</arg>
+</arguments>
+<status status="PASS" endtime="20190830 15:42:31.153" starttime="20190830 15:42:31.127"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ProductXpath}</arg>
+</arguments>
+<msg timestamp="20190830 15:42:31.154" level="INFO">Clicking element 'xpath=//*[@id="main"]/div/div/div/div[3]/div[2]/div/ul/li/div/product-card/div/div/div[1]/div[2]/h3/a'.</msg>
+<status status="PASS" endtime="20190830 15:42:31.254" starttime="20190830 15:42:31.154"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190830 15:42:31.814" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-109.png"&gt;&lt;img src="selenium-screenshot-109.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190830 15:42:31.814" starttime="20190830 15:42:31.254"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190830 15:42:31.911" starttime="20190830 15:42:31.814"></status>
+</kw>
+<status status="PASS" endtime="20190830 15:42:31.912" critical="yes" starttime="20190830 15:42:31.126"></status>
+</test>
+<test id="s1-t7" name="TC_Brand_001">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20190830 15:42:31.914" level="INFO">Opening browser 'chrome' to base url 'https://www.emersonecologics.com'.</msg>
+<status status="PASS" endtime="20190830 15:42:37.435" starttime="20190830 15:42:31.913"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190830 15:42:37.579" starttime="20190830 15:42:37.435"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${ShopMenuXpath}</arg>
+</arguments>
+<status status="PASS" endtime="20190830 15:42:37.610" starttime="20190830 15:42:37.579"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ShopMenuXpath}</arg>
+</arguments>
+<msg timestamp="20190830 15:42:37.610" level="INFO">Clicking element 'xpath=//*[@id="shopMenuDropdownToggle"]/span/span[1]'.</msg>
+<status status="PASS" endtime="20190830 15:42:37.740" starttime="20190830 15:42:37.610"></status>
+</kw>
+<status status="PASS" endtime="20190830 15:42:37.741" critical="yes" starttime="20190830 15:42:31.912"></status>
+</test>
+<test id="s1-t8" name="TC_Brand_002">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${BrandXpath}</arg>
+</arguments>
+<status status="PASS" endtime="20190830 15:42:37.768" starttime="20190830 15:42:37.742"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${BrandXpath}</arg>
+</arguments>
+<msg timestamp="20190830 15:42:37.768" level="INFO">Clicking element 'xpath=//*[@id="mega-menu-shop-by"]/li[3]/a'.</msg>
+<status status="PASS" endtime="20190830 15:42:37.874" starttime="20190830 15:42:37.768"></status>
+</kw>
+<status status="PASS" endtime="20190830 15:42:37.874" critical="yes" starttime="20190830 15:42:37.741"></status>
+</test>
+<test id="s1-t9" name="TC_Brand_003">
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${BrandImageXpath}</arg>
+</arguments>
+<msg timestamp="20190830 15:42:37.891" level="INFO">Current page contains image 'xpath=//*[@id="mega-menu-shop-by"]/li[3]/div/div/div/div[1]/div[1]/div/div[1]/img'.</msg>
+<status status="PASS" endtime="20190830 15:42:37.891" starttime="20190830 15:42:37.875"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190830 15:42:38.509" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-110.png"&gt;&lt;img src="selenium-screenshot-110.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190830 15:42:38.509" starttime="20190830 15:42:37.891"></status>
+</kw>
+<status status="PASS" endtime="20190830 15:42:38.510" critical="yes" starttime="20190830 15:42:37.875"></status>
+</test>
+<test id="s1-t10" name="TC_Brand_004">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${ShopIconXpath}</arg>
+</arguments>
+<status status="PASS" endtime="20190830 15:42:38.532" starttime="20190830 15:42:38.510"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ShopIconXpath}</arg>
+</arguments>
+<msg timestamp="20190830 15:42:38.533" level="INFO">Clicking element 'xpath=//*[@id="mega-menu-shop-by"]/li[3]/div/div/div/div[1]/div[3]/div/div[2]/p/a/span'.</msg>
+<status status="PASS" endtime="20190830 15:42:38.602" starttime="20190830 15:42:38.532"></status>
+</kw>
+<status status="PASS" endtime="20190830 15:42:38.602" critical="yes" starttime="20190830 15:42:38.510"></status>
+</test>
+<test id="s1-t11" name="TC_Brand_005">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${NextPageIconXpath}</arg>
+</arguments>
+<status status="PASS" endtime="20190830 15:42:39.469" starttime="20190830 15:42:38.603"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${NextPageIconXpath}</arg>
+</arguments>
+<msg timestamp="20190830 15:42:39.470" level="INFO">Clicking element 'xpath=//*[@id="main"]/div/div/div/div[3]/div[2]/div/div/paging/div/section/button[2]'.</msg>
+<status status="PASS" endtime="20190830 15:42:39.566" starttime="20190830 15:42:39.469"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190830 15:42:39.663" starttime="20190830 15:42:39.566"></status>
+</kw>
+<status status="PASS" endtime="20190830 15:42:39.663" critical="yes" starttime="20190830 15:42:38.602"></status>
+</test>
+<status status="PASS" endtime="20190830 15:42:39.665" starttime="20190830 15:42:20.223"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="11">Critical Tests</stat>
+<stat fail="0" pass="11">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TC Emersonecologics" pass="11">TC Emersonecologics</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
